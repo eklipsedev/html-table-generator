@@ -2,6 +2,7 @@ import MediumEditor from 'medium-editor';
 
 import { updateCode } from '../codeGenerator';
 import { settings } from '../settings';
+import { updateTableCodeInLocalStorage } from '../utils/localStorageUtils';
 
 export let editor = null; // Declare as "let" for potential reassignment
 

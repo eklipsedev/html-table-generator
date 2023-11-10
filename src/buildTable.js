@@ -28,6 +28,9 @@ export function buildTableFromCode(data) {
   if (data) {
     if (typeof data === 'string') {
       // its code
+      rows = 0;
+      cols = 0;
+
       const cleanCode = cleanHtmlCode(data);
 
       // Set the cleaned HTML to the target element
