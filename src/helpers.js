@@ -65,7 +65,7 @@ export function cleanHtmlCode(htmlCode) {
 export function clearTableFormatting() {
   const tableHtml = TABLE_TARGET.innerHTML;
   // pattern to clean formatting
-  const pattern = /<(?!\/?(table|caption|tr|td|th)\b)[^>]+>/gi;
+  const pattern = /<(?!\/?(table|caption|thead|tbody|tr|td|th)\b)[^>]+>/gi;
   // Remove unwanted HTML tags using regular expressions
   const cleanHtml = tableHtml.replace(pattern, '');
 
